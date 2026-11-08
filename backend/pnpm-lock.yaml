@@ -16,7 +16,7 @@ importers:
         version: 6.19.3(prisma@7.10.0(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
       '@stellar/stellar-sdk':
         specifier: ^17.2.1
-        version: 17.2.1(debug@4.4.3(supports-color@5.5.0))(supports-color@5.5.0)
+        version: 17.4.0(debug@4.4.3(supports-color@5.5.0))(supports-color@5.5.0)
       axios:
         specifier: ^1.6.0
         version: 1.20.0(debug@4.4.3(supports-color@5.5.0))(supports-color@5.5.0)
@@ -772,7 +772,9 @@ packages:
   '@smithy/core@3.35.2':
     resolution: {integrity: sha512-ejTukBuP/Pg3t9N8Ux+0zKsXeHWm7p6W3HbXFOyltKasSxZwCFmvTut7kBdZSCF3m9y1bXXyVu6p2xuMFcsTyQ==}
     engines: {node: '>=18.0.0'}
-    deprecated: Deprecated due to a bug in custom logger data redaction. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
+    deprecated: |-
+      Deprecated due to a bug in custom logger data redaction. Upgrade to the latest version. If you used a custom logger with this
+        version, review your logs and rotate any credentials or other secrets. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/credential-provider-imds@4.5.2':
     resolution: {integrity: sha512-A9uSdn72ozbRUSit0eib0TW7nXuNPlaeM0zcGkJ+nE6tFcSDbnmtwoxbTCFBukVQcszDAyvsd7+rTduPTXpygg==}
@@ -810,8 +812,8 @@ packages:
     resolution: {integrity: sha512-HBDNKnxr+ecdaEmbZ0mcKkirOF8tXXEbWSw34P3wT40Tn3g+u+cCH17xAWZymzscq8cojHB8340pR8QNVaD32w==}
     engines: {node: '>=22.0.0', pnpm: '>=10.0.0'}
 
-  '@stellar/stellar-sdk@17.2.1':
-    resolution: {integrity: sha512-kIyfnZ2zCOqV8SUJcsk9buBOvhH1wsLU7KAzqAJyY7AgmD+KdvLTMpI1gcYdhGSakuDG5s6xSO4EN9HZTxpm8g==}
+  '@stellar/stellar-sdk@17.4.0':
+    resolution: {integrity: sha512-IX6gi62yWQ+6Oz56LsVEEeSViSOWJL3BkttftwVmVsu+62nLTWNVsCmTWEzwgNLT/q5HGP25OnlU+hhy2E4wwA==}
     engines: {node: '>=22.12.0'}
     hasBin: true
 
@@ -3757,7 +3759,7 @@ snapshots:
 
   '@stellar/js-xdr@5.0.0': {}
 
-  '@stellar/stellar-sdk@17.2.1(debug@4.4.3(supports-color@5.5.0))(supports-color@5.5.0)':
+  '@stellar/stellar-sdk@17.4.0(debug@4.4.3(supports-color@5.5.0))(supports-color@5.5.0)':
     dependencies:
       '@exodus/bytes': 1.16.0(@noble/hashes@2.4.0)
       '@noble/ed25519': 3.2.0
